@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'faker'
+
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+Author.create(name: Faker::Pokemon.name, phone_number: Faker::PhoneNumber.phone_number)
+
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Non-Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Non-Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Non-Fiction")
+Post.create(title: Faker::Hipster.word, content: Faker::Hipster.sentence, summary: Faker::Lorem.paragraph, category: "Fiction")

@@ -1,0 +1,10 @@
+<h1>Create an Author</h1>
+
+<% if @author.errors.any? %>
+	<% @author.errors.full_messages.each do |msg| %>
+		<%= msg %>
+	<% end %>
+<% end %>
+
+<%= render partial: 'form' %>
+

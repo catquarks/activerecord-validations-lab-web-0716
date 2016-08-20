@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= link_to "Create an Author", new_author_path %> / <%= link_to "Go Back to All Authors", authors_path %>
+<br>
+<%= link_to "Create a Post", new_post_path %> / <%= link_to "Go Back to All Posts", posts_path %>
 
 <%= yield %>
 
