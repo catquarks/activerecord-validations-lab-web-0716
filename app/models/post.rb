@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
 	private
 		def clickbait
 			if title
-				unless title.downcase.include?("won't believe") || title.downcase.include?("guess") || title.match(/top \d+/)
+				unless title.downcase.include?("won't believe") || title.downcase.include?("guess") || title.downcase.match(/top \d+/)
 						errors.add(:title, "needs more clickbait!")
 				end
 			else

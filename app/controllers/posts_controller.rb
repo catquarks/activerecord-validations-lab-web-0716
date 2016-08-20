@@ -15,8 +15,11 @@ class PostsController < ApplicationController
 
   def create
     # binding.pry
-    @post = Post.create(post_params)
-    if @post.save
+    # @post = Post.create(post_params)
+    # if @post.save #=> this is faster than the below
+    @post = Post.new(post_params)
+    if @post.valid?
+      @post.save
       redirect_to post_path(@post)
     else
       render 'new'
